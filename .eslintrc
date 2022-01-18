@@ -1,0 +1,101 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "react"
+    ],
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "prettier",
+        "prettier/react",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:redux-saga/recommended"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error"
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": [
+            "error"
+        ],
+        "no-underscore-dangle": "off",
+        "no-use-before-define": "off",
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true,
+                "ignorePropertyModificationsFor": [
+                    "draft"
+                ]
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "@typescript-eslint/consistent-type-imports": "error",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/prop-types": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "webpack/*.ts",
+                    "jest.setup.ts",
+                    "**/*.spec.ts",
+                    "**/*.spec.tsx"
+                ]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ],
+            "rules": {
+                "@typescript-eslint/explicit-function-return-type": [
+                    "error"
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "env": {
+        "node": true,
+        "jest": true
+    }
+}

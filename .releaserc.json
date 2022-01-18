@@ -1,0 +1,27 @@
+{
+  "branches": ["main"],
+  "repositoryUrl": "https://github.com/macastro9714/Shopify_IC.git",
+  "verifyConditions": ["semantic-release-git-branches"],
+  "analyzeCommits": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "angular"
+      }
+    ]
+  ],
+  "verifyRelease": [],
+  "generateNotes": ["@semantic-release/release-notes-generator"],
+  "prepare": [
+    {
+      "path": "semantic-release-git-branches",
+      "assets": ["package.json", "CHANGELOG.md"],
+      "branchMerges": ["main"],
+      "message": "chore: create new release ${nextRelease.version}\n\n${nextRelease.notes}"
+    }
+  ],
+  "publish": [],
+  "fail": [],
+  "success": [],
+  "addChannel": []
+}

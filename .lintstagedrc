@@ -1,0 +1,10 @@
+{
+    "**/*.{ts,tsx,js,jsx}": [
+        "prettier --write",
+        "import-sort --write",
+        "eslint --ext .js,.jsx,.ts,.tsx --max-warnings=0 --fix"
+    ],
+    "**/*.{json,css}": [
+        "prettier --write"
+    ]
+}
