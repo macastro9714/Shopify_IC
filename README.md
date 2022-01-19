@@ -11,14 +11,14 @@ Spacestagram: Image-sharing - Front End Challenge - Summer 2022
 
 This template includes some basic yarn scripts:
 
-- **`webpack`:** Alias for webpack that includes the env variable for
-  `tsconfig.json` (see [here](https://webpack.js.org/configuration/configuration-languages/#typescript))
-- **`start`:** Starts a webpack development server
-- **`build`:** Creates a webpack production build
-- **`lint`:** Runs eslint to check the code
-- **`format`:** Runs `prettier` and `import-sort` to format the code
-- **`test`:** Runs jest
-- **`test:watch`:** Runs jest on watch mode
+-   **`webpack`:** Alias for webpack that includes the env variable for
+    `tsconfig.json` (see [here](https://webpack.js.org/configuration/configuration-languages/#typescript))
+-   **`start`:** Starts a webpack development server
+-   **`build`:** Creates a webpack production build
+-   **`lint`:** Runs eslint to check the code
+-   **`format`:** Runs `prettier` and `import-sort` to format the code
+-   **`test`:** Runs jest
+-   **`test:watch`:** Runs jest on watch mode
 
 ## Path aliases
 

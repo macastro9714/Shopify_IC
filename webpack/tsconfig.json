@@ -1,9 +1,9 @@
 // Typescript config for webpack configs
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "target": "es5"
-  },
-  "include": ["src"]
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "target": "es5"
+    },
+    "include": ["src"]
 }

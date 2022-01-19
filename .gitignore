@@ -18,6 +18,8 @@ coverage/
 # Build
 dist/
 
+# env
+.env
 
 # User-specific files
 *.rsuser

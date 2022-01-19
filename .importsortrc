@@ -1,6 +1,6 @@
 {
-    ".ts, .tsx": {
-        "parser": "typescript",
-        "style": "module"
-    }
+        ".ts, .tsx": {
+                "parser": "typescript",
+                "style": "module"
+        }
 }
